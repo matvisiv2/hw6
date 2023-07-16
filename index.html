@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <h1 class="main-title">Intake Main Flow</h1>
+
+    <div class="first-block">
+      <span class="text-red">*</span> Mandatory field
+    </div>
+
+    <div class="block">
+      <h2 class="secondary-title">Information</h2>
+
+      <div class="d-flex justify-content-space-between">
+        <div>
+          <div class="sub-block-item">
+            <p class="block-p">Intake Type<span class="text-red">* (select)</span></p>
+            <select class="sub-block-item-input">
+              <option value="Referral">Referral</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Phone</p>
+            <input type="text" class="sub-block-item-input" />
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">E-mail</p>
+            <input type="text" class="sub-block-item-input" />
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Application Registration (Optional)</p>
+            <select class="sub-block-item-input text-blue">
+              <option value="APP0000116">APP0000116</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Additional Information Requested Date (Optional)</p>
+            <input type="text" class="sub-block-item-input text-center" value="05-13-2021" />
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Remaining Days Before Referral is Purged (Optional)</p>
+            <input type="text" class="sub-block-item-input" value="13" />
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Fee Payment Date (Optional)</p>
+            <input type="text" class="sub-block-item-input text-center" value="05/13/2021" />
+          </div>
+          <div class="sub-block-item d-flex">
+            <input type="checkbox" class="sub-block-item-checkbox accent-pink" checked>
+            <p>Application Fee Processed</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="sub-block-item">
+            <p class="block-p">Enrollment Initiation Date jquery</p>
+            <input type="text" class="sub-block-item-input" value="05/11/2021" disabled />
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Application Category<span class="text-red">*</span></p>
+            <select class="sub-block-item-input">
+              <option value="Child Support">Child Support</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Enrollment Submission Date (Optional)</p>
+            <input type="text" class="sub-block-item-input text-center" value="05/11/2021" disabled />
+          </div>
+          <div class="sub-block-item">
+            &nbsp;
+          </div>
+          <div class="sub-block-item d-flex">
+            <input type="checkbox" class="sub-block-item-checkbox">
+            <p>Purged</p>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Exempt from Paternity (Optional)</p>
+            <select class="sub-block-item-input">
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Enrollment Status (Optional)</p>
+            <select class="sub-block-item-input">
+              <option value="Worklisted">Worklisted</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            &nbsp;
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <h2 class="secondary-title">Maternity Information</h2>
+
+      <div class="d-flex justify-content-space-between">
+        <div class="sub-block-item d-flex">
+          <div class="pt-40"><input type="checkbox" class="sub-block-item-checkbox"></div>
+          <p class="pt-40">Are you requesting child support services for an unborn child?</p>
+        </div>
+
+        <div class="sub-block-item">
+          <p class="block-p">Other known biological parent? (Optional)</p>
+          <select class="sub-block-item-input">
+            <option value="None">None</option>
+          </select>
+        </div>
+      </div>
+
+      <hr />
+
+      <h2 class="secondary-title">Official Use</h2>
+
+      <div class="d-flex justify-content-space-between">
+        <div>
+          <div class="sub-block-item">
+            <p class="block-p">Case Category (select)</p>
+            <select class="sub-block-item-input">
+              <option value="Active IV-A">Active IV-A</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Arrears Only Indicator (Optional)</p>
+            <select class="sub-block-item-input">
+              <option value="None">None</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Assigned County of Ownership (Optional)</p>
+            <select class="sub-block-item-input">
+              <option value="None">None</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Intergovermental Case Status (details)</p>
+            <select class="sub-block-item-input">
+              <option value="None">None</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Special Handling Indicator for Applicant (Optional)</p>
+            <select class="sub-block-item-input">
+              <option value="None">None</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Special Handling Indicator for Other Parent (Optional)</p>
+            <select class="sub-block-item-input">
+              <option value="None">None</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <div class="sub-block-item">
+            <p class="block-p">IV-D Indicator<span class="text-red">*</span></p>
+            <select class="sub-block-item-input">
+              <option value="Non-IV-D">Non-IV-D</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Intergovernmental Case Category (Optional)</p>
+            <select class="sub-block-item-input">
+              <option value="None">None</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Intergovernmental Case Type (Optional)</p>
+            <select class="sub-block-item-input">
+              <option value="None">None</option>
+            </select>
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Case Number</p>
+            <input type="search" class="sub-block-item-input sub-block-item-input-search"
+              placeholder="Search Case Number" />
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Referral Number</p>
+            <input type="search" class="sub-block-item-input sub-block-item-input-search"
+              placeholder="Search Referral Number" />
+          </div>
+          <div class="sub-block-item">
+            &nbsp;
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <h2 class="secondary-title">System Information</h2>
+
+      <div class="d-flex justify-content-space-between">
+        <div>
+          <div class="sub-block-item">
+            <p class="block-p">Enrollment Taken by User </p>
+            <input type="search" class="sub-block-item-input sub-block-item-input-search" placeholder=""
+              value="Search Input" />
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Worker (Optional)</p>
+            <input type="search" class="sub-block-item-input sub-block-item-input-search" placeholder=""
+              value="Search Input" />
+          </div>
+        </div>
+
+        <div>
+          <div class="sub-block-item">
+            <p class="block-p">Intake Supervisor (Optional)</p>
+            <input type="search" class="sub-block-item-input sub-block-item-input-search" placeholder="Search" />
+          </div>
+          <div class="sub-block-item">
+            <p class="block-p">Owner (Optional)</p>
+            <input type="search" class="sub-block-item-input sub-block-item-input-search text-blue" placeholder=""
+              value="Rajaneesh Banal" />
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="d-flex justify-content-end">
+        <button class="btn">Next</button>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
